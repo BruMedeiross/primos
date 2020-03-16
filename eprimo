@@ -1,0 +1,10 @@
+n = int(input("digite um número > 0: "))
+fator = 2
+while n > 0:
+    while n % fator != 0 and fator <= n/2: #enquanto o resto da div do numero for diferente de zero e o fator for menor que o numero div por 2
+        fator = fator+1 # fator recebe +1 para fazer o calculo
+    if n % fator ==  0: # se o resto da div for zero não é primo
+        print("não é primo")
+    else: # caso todos os fatores testados o resto da div seja dif de zero - é primo
+        print ("é primo")
+    n = int (input("digite um número: ")) #digite o prox número para verificar se é primo ou não
